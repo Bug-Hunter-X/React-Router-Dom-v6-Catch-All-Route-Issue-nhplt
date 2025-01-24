@@ -1,0 +1,3 @@
+This repository demonstrates a common issue in React Router v6 concerning catch-all routes (`/*`).  The issue is that a catch-all route will always match, even if other, more specific routes are defined earlier. This can lead to unexpected behavior where other routes are not rendered.
+
+The `App.js` file demonstrates the problem. The solution, shown in `AppSolution.js`, uses the `useLocation` hook to conditionally render a 404 page only if no other route matches.
